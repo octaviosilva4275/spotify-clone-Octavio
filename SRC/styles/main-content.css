@@ -1,0 +1,353 @@
+
+
+
+  .hidden {
+    display: none;
+  }
+  
+
+  .header__navigation,
+  .main-container {
+    background-color: var(--bg-body-VRGL);
+  }
+  
+  /* Add margin to the top of the main container to create space between the header */
+  .main-container {
+    margin-top: 10px; /* Adjust the margin value as needed */
+  }
+
+.navigation {
+  display: flex;
+}
+
+/* setas */
+.header__navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 25px;
+  height: 65px; /* Adjust height as needed */
+
+  border-bottom: 7px solid black;
+
+}
+
+.arrow-left,
+.arrow-right {
+  background-color: var(--bg-body-VRGL);
+  border-radius: 50%;
+  margin: 5px;
+  width: 40px;
+  height: 40px;
+}
+
+.arrow-left {
+  margin-left: 0; /* Remove left margin for better positioning */
+}
+
+.arrow-left img,
+.arrow-right img {
+  width: 20px;
+  height: 20px;
+}
+
+/* Search bar */
+.header__search {
+  background-color: #353434;
+  color: #a7a6a6;
+  width: 30px;
+  padding: 10px 100px 10px 10px;
+  border-radius: 19px;
+  display: flex;
+  align-items: center;
+  margin-left: -50px;
+  margin-top: 5px;
+  flex: 1; /* Allow search bar to shrink on smaller screens */
+  max-width: 350px;
+
+  /* Media queries for responsiveness */
+  @media (max-width: 1024px) {
+    padding: 5px 50px 5px 5px;
+  }
+
+
+}
+
+.header__search img {
+  width: 15px;
+  margin-right: 15px;
+}
+
+.header__search input {
+  padding: 3px 0 3px 0;
+  background-color: #353434;
+  flex: 1;
+}
+
+/* Buttons */
+.header__Login {
+  display: flex;
+  justify-content: space-around;
+  width: 200px; 
+  margin-right: 120px;
+
+  @media (max-width: 1024px) {
+    margin-right: 50px;
+  }
+
+
+}
+
+.subscribe,
+.login {
+  padding: 12px 19px;
+  border-radius: 19px;
+  color: black;
+  font-weight: 400;
+}
+
+.subscribe {
+  color: var(--bg-button-VRGL);
+  background-color: var(--bg-subscribe-transparencia-VRGL);
+}
+
+/* Playlist container */
+.playlist-container {
+  margin-top: 100px;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+
+
+  /* Media queries for responsiveness */
+  @media (max-width: 1024px) {
+    width: 90%;
+  }
+
+
+}
+
+.playlist{
+  margin-top: -80px;
+}
+
+.playlist-container__title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+
+.playlist-container__item {
+  background-color: var(--bg-body-VRGL);
+  border-radius: 8px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%; /* Stretch playlist item to full width */
+  margin-bottom: 10px;
+  cursor: pointer; /* Indicate clickable elements */
+  transition: background-color 0.2s ease-in-out; /* Add smooth hover effect */
+}
+
+.playlist-container__item:hover {
+  background-color: var(--bg-body-VRGL); /* Darken background on hover */
+}
+
+.playlist-container__item img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.playlist-container__item__title {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.playlist-container__item__subtitle {
+  font-size: 14px;
+  color: #a7a6a6;
+}
+
+
+
+
+/* DISPLAY GRID */
+
+.card1{grid-area: card1;}
+.card2{grid-area: card2;}
+.card3{grid-area: card3;}
+.card4{grid-area: card4;}
+.card5{grid-area: card5;}
+.card6{grid-area: card6;}
+.card7{grid-area: card7;}
+.card8{grid-area: card8;}
+.card9{grid-area: card9;}
+.card10{grid-area: card10;}
+.card11{grid-area: card11;}
+.card12{grid-area: card12;}
+.card13{grid-area: card13;}
+.card14{grid-area: card14;}
+.card15{grid-area: card15;}
+
+
+.playlist-content{
+    width: 100%;
+    height: auto;
+}
+
+.result-playlist, h1, h2{
+    margin: 20px 0 0 25px;
+    color: #fff;
+    width: auto;
+}
+
+
+
+
+/* SCROLL */
+.offer__scroll-container {
+  max-height: 45vh;
+  margin: 24px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.offer__scroll-container::-webkit-scrollbar {
+  width: 1px;
+}
+
+.offer__scroll-container::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+
+.offer__list {
+  width: 100%;
+  margin: 50px 25px 0 25px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: var(--background-mainVRGL);
+  color: var(--color-mainVRGL);
+  overflow: hidden;
+  overflow-y: scroll;
+  -ms-overflow-style: none; /* for Internet Explorer/Edge */
+  scrollbar-width: none; /* for Firefox */
+}
+
+.offer__list::-webkit-scrollbar {
+  display: none;
+}
+
+.offer__list-item {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.offer__list-item a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  color: #333;
+}
+
+.offer__list-item a img {
+  width: 107px;
+  height: auto;
+  transform: rotate(25deg) translate(18%, -2%);
+
+}
+
+
+
+.cards {
+  width: 220px;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 8px;
+  display: flex; /* Added display: flex */
+  justify-content: flex-start; /* Added justify-content: flex-start */
+  text-align: initial;
+}
+
+.cards img {
+  position: absolute;
+  left: 110px;
+  top: 72px;
+  width: 50px;
+  height: 50px;
+  margin: 20px 0 0 0;
+  transform: rotate(10deg);
+}
+
+.cards span {
+  padding: 16px;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+}
+/* Classes específicas para cards 1 a 15 */
+
+.card1 {
+  background-color: rgb(0, 100, 80);
+}
+.card2 {
+  background-color: rgb(132, 0, 231);
+}
+.card3 {
+  background: rgb(30, 50, 100);
+}
+.card4 {
+  background: rgb(140, 25, 50);
+}
+.card5 {
+  background: rgb(232, 17, 91);
+}
+.card6 {
+  background: rgb(83, 122, 161);
+}
+.card7 {
+  background: rgb(142, 102, 172);
+}
+.card8 {
+  background: rgb(20, 138, 8);
+}
+.card9 {
+  background: rgb(30, 50, 100);
+}
+.card10 {
+  background: rgb(233, 20, 41);
+}
+.card11 {
+  background: rgb(80, 55, 80);
+}
+.card12 {
+  background: rgb(216, 64, 0);
+}
+.card13 {
+  background: rgb(186, 93, 7);
+}
+.card14 {
+  background: rgb(0, 30, 80);
+}
+.card15 {
+  background: rgb(60, 30, 80);
+}
+
+#greeting{
+  font-size: 28px;
+}
+
+.session{
+  font-size: 18px;
+}

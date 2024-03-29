@@ -1,0 +1,19 @@
+:root{
+
+        
+--font-dm-sans:"DM Sans", sans-serif;
+
+/* COLORS GLOBAL */
+--bg-body-VRGL:#131313;
+--bg-arrow-color-VRGL: rgba(0, 250, 0, 7);
+--bg-gradient-footer-VRGL: linear-gradient(to right, #ae2896, #509bf5);
+--bg-button-VRGL: #fff;
+--bg-color-playlist-VRGL: #a7a6a6;
+--bg-subscribe-transparencia-VRGL: rgba(255, 0, 0, 0);
+
+/* COLORS MOD 01 */
+--bg-body-VRM1:#5960be;
+--bg-arrow-color-VRM1: rgba(0, 250, 68, 7);
+--bg-gradient-footer-VRM1: linear-gradient(to right, #5960be, #a7ce83);
+--bg-button-VRM1: #a7ce83;
+}
